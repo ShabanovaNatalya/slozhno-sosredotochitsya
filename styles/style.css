@@ -47,7 +47,7 @@ img:last-child {
 
 
 .header__content::before,
-.footer__content::before {
+.footer::before {
   justify-self: end;
   content: "";
   inline-size: 25px;
@@ -57,7 +57,7 @@ img:last-child {
 }
 
 .header__content::after,
-.footer__content::after {
+.footer::after {
   content: "";
   inline-size: 25px;
   aspect-ratio: 1;
@@ -264,17 +264,17 @@ img:last-child {
   margin-block: 52px calc(clamp);
 }
 .footer {
-  min-block-size: 100%;
-}
-
-.footer__content {
   display: grid;
+  grid-template-columns: 100%;
+  align-items: stretch;
+justify-items: stretch;
   margin-block-end: min(2.666vw, 20px);
 }
 
 .footer__title {
-  align-content: center;
-  text-align: center;
+display: block;
+justify-self: center;
+align-content: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--text-color-accent);
   text-shadow: 2px 2px 0 var(--accent-color);
