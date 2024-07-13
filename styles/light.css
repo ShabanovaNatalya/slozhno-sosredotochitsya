@@ -20,7 +20,7 @@
   --text-color: rgba(53, 52, 48, 1);
   --text-color-accent: rgba(255, 194, 230, 1);
   --main-font: "IBM Plex mono", sans-serif;
-  --background: url(../images/cover-image-light.png) no-repeat center / cover;
+  --background: url("../images/cover-image-light.png") no-repeat center / cover;
 
   .header__decor::before {
     display: none;
@@ -42,7 +42,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root .theme_light {
     /* Дублируем переменные светлой темы */
     --accent-color: rgba(255, 141, 203, 1);
     --accent-color-opasity: rgba(50, 49, 45, 0.4);
@@ -50,6 +50,6 @@
     --text-color: rgba(53, 52, 48, 1);
     --text-color-accent: rgba(255, 141, 203, 1);
     --main-font: "IBM Plex mono", sans-serif;
-    --background: url(../images/cover-image-light.png) no-repeat center / cover;
+    --background: url("../images/cover-image-light.png") no-repeat center / cover;
   }
 }

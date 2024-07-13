@@ -1,15 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-img {
-  inline-size: 100%;
-}
 
-img:not(:last-child) {
-  margin-block-end: 6px;
-}
-
-img:last-child {
-  margin-block-end: 46px;
-}
 
 /* Скрытие элементов */
 .visually-hidden {
@@ -35,18 +25,16 @@ img:last-child {
 }
 
 .header {
-  min-block-size: 100%;
-}
-
-.header__content {
+  min-block-size: calc(100vh - 40px);
   display: grid;
-  margin: min(2.666vw, 20px);
-  margin-block-end: min(13.333vw, 82px);
+  margin: clamp(10px, 2.666vw, 20px);
 }
 
+main {
+  margin-block-end: clamp(45px, 11.60px + 8.9059vw, 80px);;
+}
 
-
-.header__content::before,
+.header::before,
 .footer::before {
   justify-self: end;
   content: "";
@@ -56,7 +44,7 @@ img:last-child {
   border-inline-end: 1px var(--accent-color-btn) solid;
 }
 
-.header__content::after,
+.header::after,
 .footer::after {
   content: "";
   inline-size: 25px;
@@ -98,11 +86,10 @@ img:last-child {
 
 .header__theme-menu {
   display: grid;
-
   justify-self: end;
   font-size: 18px;
   color: var(--accent-color-btn);
-  margin-block-end: clamp(68px, -32.192px + 27.18vw, 177px);
+  margin-block-end: clamp(68px, -33.192px + 27.18vw, 177px);
 }
 
 .header__theme-menu-list {
@@ -184,6 +171,7 @@ img:last-child {
 }
 
 .content {
+  margin-block-start: clamp(50px, 13.333vw, 80px);
   margin-inline: min(2.666vw, 20px);
 }
 
@@ -191,9 +179,10 @@ img:last-child {
   display: grid;
   margin-block: 40px clamp(50px, 20.3744px + 7.94vw, 85px);
 }
+
 .what,
 .how {
-  margin-block: 40px clamp(50px, 20.3744px + 7.94vw, 85px);
+  margin-block: 40px clamp(49px, 21.3744px + 7.94vw, 81px);
 }
 
 .why div {
@@ -260,15 +249,25 @@ img:last-child {
   display: none;
 }
 
-.art__title {
-  margin-block: 52px calc(clamp);
+
+img {
+  inline-size: 100%;
 }
+
+img:not(:last-child) {
+  margin-block-end: 6px;
+}
+
+img:last-child {
+  margin-block-end: 3px;
+}
+
 .footer {
+  max-block-size: calc(100vh - clamp(20px, 5.332vw, 40px));
   display: grid;
-  grid-template-columns: 100%;
   align-items: stretch;
 justify-items: stretch;
-  margin-block-end: min(2.666vw, 20px);
+  margin: clamp(10px, 2.666vw, 20px);
 }
 
 .footer__title {
@@ -287,6 +286,7 @@ align-content: center;
   .how {
     grid-template-columns: 1fr 2fr;
   }
+
   .why__content article:not(:first-child) {
     margin-block-start: 20px;
   }
@@ -298,12 +298,13 @@ align-content: center;
   }
 
   .how ul {
+    margin-inline-start: 13px;
     justify-self: end;
     max-width: 100%;
   }
 
   .art__gallery {
-    margin-block: 20px 80px;
+    margin-block-start: 20px;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -346,7 +347,7 @@ align-content: center;
   }
 
   .footer__title {
-    min-block-size: calc(100vh - 85px);
+    min-block-size: calc(100vh - 90px);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
@@ -358,7 +359,7 @@ align-content: center;
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-end: clamp(114px, 323px + -18.75vw, 162px);
+    margin-block-end: clamp(114px, 323px + -18.75vw, 165px);
   }
 
   .header__subtitle {
