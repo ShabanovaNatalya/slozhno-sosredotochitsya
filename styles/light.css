@@ -31,13 +31,10 @@
   .how__title {
     color: inherit;
   }
-  
+
   h4.title-decor {
     font-weight: 400;
   }
-  
-
-
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,4 +49,3 @@
     --background: url(../images/cover-image-light.png) no-repeat center / cover;
   }
 }
-

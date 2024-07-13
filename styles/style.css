@@ -290,7 +290,7 @@ img:last-child {
   .how ul {
     justify-self: end;
     max-width: 100%;
-}
+  }
 
   .art__gallery {
     margin-block: 20px 80px;
@@ -321,20 +321,17 @@ img:last-child {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-
   }
 
   .art__img__street {
     grid-column-start: 2;
     grid-column-end: 4;
-
   }
 
   .art__img__tape {
     grid-row-start: 2;
     grid-row-end: 4;
     aspect-ratio: 0.403;
-
   }
 
   .art__img__ice-cream {
@@ -410,7 +407,7 @@ img:last-child {
   .why div {
     max-width: 100%;
     margin-inline-start: 8px;
-}
+  }
 
   .why__title,
   .what__title,
@@ -432,7 +429,6 @@ img:last-child {
   .how {
     margin-block: 40px clamp(50px, 20.3744px + 7.94vw, 82px);
   }
-
 
   .art__img__ice-cream {
     max-block-size: calc(100vw - 429px);
