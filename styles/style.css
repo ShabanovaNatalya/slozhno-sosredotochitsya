@@ -36,6 +36,7 @@ img:last-child {
 
 .header {
   display: grid;
+  min-block-size: 100%;
   margin: min(2.666vw, 20px);
   margin-block-end: min(13.333vw, 82px);
 }
@@ -258,6 +259,7 @@ img:last-child {
   margin-block: 52px calc(clamp);
 }
 .footer {
+  min-block-size: 100%;
   display: grid;
   margin-block-end: min(2.666vw, 20px);
 }
@@ -321,6 +323,7 @@ img:last-child {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+    aspect-ratio: 0.52;
   }
 
   .art__img__street {
@@ -332,10 +335,6 @@ img:last-child {
     grid-row-start: 2;
     grid-row-end: 4;
     aspect-ratio: 0.403;
-  }
-
-  .art__img__ice-cream {
-    aspect-ratio: 0.52;
   }
 
   .footer__title {
