@@ -9,4 +9,47 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: rgba(255, 141, 203, 1);
+  --accent-color-btn: rgba(50, 49, 45, 1);
+  --accent-color-opasity: rgba(50, 49, 45, 0.4);
+  --bg-color: rgba(0, 0, 40, 1);
+  --text-color: rgba(53, 52, 48, 1);
+  --text-color-accent: rgba(255, 194, 230, 1);
+  --main-font: "IBM Plex mono", sans-serif;
+  --background: url(../images/cover-image-light.png) no-repeat center / cover;
+
+  .header__decor::before {
+    display: none;
+  }
+
+  .header__decor::after {
+    display: none;
+  }
+
+  .why__title,
+  .what__title,
+  .how__title {
+    color: inherit;
+  }
+  
+  h4.title-decor {
+    font-weight: 400;
+  }
+  
+
+
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */
+    --accent-color: rgba(255, 141, 203, 1);
+    --accent-color-opasity: rgba(50, 49, 45, 0.4);
+    --bg-color: rgba(0, 0, 40, 1);
+    --text-color: rgba(53, 52, 48, 1);
+    --text-color-accent: rgba(255, 141, 203, 1);
+    --main-font: "IBM Plex mono", sans-serif;
+    --background: url(../images/cover-image-light.png) no-repeat center / cover;
+  }
+}
+
