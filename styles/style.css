@@ -388,7 +388,7 @@ img:not(:last-child) {
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-block-start: clamp(274px, 833px + -51.25vw, 420px);
+    padding-block-start: clamp(274px, 820px + -51.25vw, 420px);
     min-block-size: calc(100vh - 93px);
   }
 }

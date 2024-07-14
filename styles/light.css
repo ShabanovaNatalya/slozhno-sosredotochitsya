@@ -43,7 +43,7 @@ h4.title-decor {
 }
 
 @media (prefers-color-scheme: light) {
-  :root .theme_light {
+  :root {
     /* Дублируем переменные светлой темы */
     --accent-color: rgba(255, 141, 203, 1);
     --accent-color-opasity: rgba(50, 49, 45, 0.4);
