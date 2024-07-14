@@ -7,9 +7,9 @@
   --accent-color: rgba(255, 0, 112, 1);
   --accent-color-opasity: rgba(50, 49, 45, 0.4);
   --accent-color-btn: rgba(255, 0, 112, 1);
-  --bg-color: rgba(0, 0, 40, 1);
+  --bg-color: ;
   --text-color: rgba(241, 178, 206, 1);
   --text-color-accent: rgba(219, 0, 255, 1);
   --main-font: "IBM Plex mono", sans-serif;
-  --background: url("../images/cover-image-dark.png") no-repeat center / cover;
+  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png") no-repeat center / cover;
 }

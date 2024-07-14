@@ -17,7 +17,6 @@
   font-family: var(--main-font);
   font-style: normal;
   color: var(--text-color);
-  background-color: var(--bg-color);
   background: var(--background);
   background-attachment: fixed;
 }
