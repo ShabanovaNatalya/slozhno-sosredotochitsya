@@ -1,6 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 /* Скрытие элементов */
 .visually-hidden {
   position: absolute;
@@ -20,32 +19,39 @@
   font-family: var(--main-font);
   font-style: normal;
   color: var(--text-color);
+  background-color: var(--bg-color);
   background: var(--background);
   background-attachment: fixed;
 }
 
-.header {
-  min-block-size: calc(100vh - 40px);
+header {
+  min-block-size: 100vh;
+  margin-block-end: clamp(40px, 20.92px + 5.0891vw,60px);
+}
+
+.header__content {
   display: grid;
   margin: clamp(10px, 2.666vw, 20px);
+  margin-block-start: 0;
 }
 
 main {
-  margin-block-end: clamp(45px, 11.60px + 8.9059vw, 80px);;
+  margin-block-end: clamp(39px, 20.92px + 5.25vw, 61px);
 }
 
-.header::before,
-.footer::before {
+.header__content::before,
+.footer__content::before {
   justify-self: end;
   content: "";
   inline-size: 25px;
   aspect-ratio: 1;
+  margin-block-start: clamp(10px, 2.666vw, 20px);;
   border-block-start: 1px var(--accent-color-btn) solid;
   border-inline-end: 1px var(--accent-color-btn) solid;
 }
 
-.header::after,
-.footer::after {
+.header__content::after,
+.footer__content::after {
   content: "";
   inline-size: 25px;
   aspect-ratio: 1;
@@ -171,18 +177,18 @@ main {
 }
 
 .content {
-  margin-block-start: clamp(50px, 13.333vw, 80px);
+  /* margin-block-start: clamp(40px, 13.333vw, 60px); */
   margin-inline: min(2.666vw, 20px);
 }
 
 .why {
   display: grid;
-  margin-block: 40px clamp(50px, 20.3744px + 7.94vw, 85px);
+  margin-block-end: clamp(50px, 16.60px + 8.9059vw, 80px);
 }
 
 .what,
 .how {
-  margin-block: 40px clamp(49px, 21.3744px + 7.94vw, 81px);
+  margin-block-end: clamp(49px, 21.3744px + 7.94vw, 81px);
 }
 
 .why div {
@@ -210,7 +216,6 @@ main {
 
 .how {
   display: grid;
-  margin-block-start: 52px;
 }
 
 .how ul {
@@ -219,8 +224,10 @@ main {
 }
 
 .how h3 {
-  margin-block-start: max(0px, calc(40px - 5.333vw));
+  margin-block: max(0px, calc(41px - 5.333vw)) 0px;
+
 }
+
 
 .why__links,
 .how__links {
@@ -249,7 +256,6 @@ main {
   display: none;
 }
 
-
 img {
   inline-size: 100%;
 }
@@ -263,17 +269,20 @@ img:last-child {
 }
 
 .footer {
-  max-block-size: calc(100vh - clamp(20px, 5.332vw, 40px));
+  min-block-size: 100vh;
+}
+
+.footer__content {
   display: grid;
   align-items: stretch;
-justify-items: stretch;
-  margin: clamp(10px, 2.666vw, 20px);
+  justify-items: stretch;
+  margin-inline: clamp(10px, 2.666vw, 20px);
 }
 
 .footer__title {
-display: block;
-justify-self: center;
-align-content: center;
+  display: block;
+  justify-self: center;
+  align-content: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--text-color-accent);
   text-shadow: 2px 2px 0 var(--accent-color);
