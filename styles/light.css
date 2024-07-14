@@ -16,6 +16,7 @@
   --accent-color: rgba(255, 141, 203, 1);
   --accent-color-btn: rgba(50, 49, 45, 1);
   --accent-color-opasity: rgba(50, 49, 45, 0.4);
+  --bg-color: rgba(255, 241, 247, 1);
   --text-color: rgba(53, 52, 48, 1);
   --text-color-accent: rgba(255, 194, 230, 1);
   --main-font: "IBM Plex mono", sans-serif;
@@ -42,7 +43,7 @@ h4.title-decor {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root .theme_light {
     /* Дублируем переменные светлой темы */
     --accent-color: rgba(255, 141, 203, 1);
     --accent-color-opasity: rgba(50, 49, 45, 0.4);

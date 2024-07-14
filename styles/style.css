@@ -261,9 +261,9 @@ img:not(:last-child) {
   margin-block-end: 6px;
 }
 
-img:last-child {
+/* img:last-child {
   margin-block-end: 3px;
-}
+} */
 
 .footer {
   min-block-size: 100vh;
@@ -279,12 +279,12 @@ img:last-child {
 .footer__title {
   display: block;
   justify-self: center;
-  padding-block-start: 37.7vh;
+  padding-block-start: clamp(251px, 91.65px + 42.8vw, 420px);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--text-color-accent);
   text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 95.7px;
-  min-block-size: calc(100vh - 68px);
+  min-block-size: calc(100vh - 72px);
 }
 
 @media (min-width: 752px) {
@@ -352,10 +352,7 @@ img:last-child {
     aspect-ratio: 0.403;
   }
 
-  .footer__title {
-    min-block-size: calc(100vh - 90px);
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
+
 }
 
 @media (min-width: 768px) {
@@ -383,6 +380,16 @@ img:last-child {
   .why div {
     max-width: 100%;
     margin-inline-start: 13px;
+  }
+
+  .how__content {
+    margin-inline-start: 11px;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    padding-block-start: clamp(274px, 833px + -51.25vw, 420px);
+    min-block-size: calc(100vh - 93px);
   }
 }
 
@@ -433,15 +440,13 @@ img:last-child {
     margin-block-start: 0px;
   }
 
-  .how__content {
-    justify-self: end;
-    max-width: 100%;
-    margin-inline-start: 7px;
-  }
-
   .what,
   .how {
     margin-block: 40px clamp(50px, 20.3744px + 7.94vw, 82px);
+  }
+
+  .how__content {
+    margin-inline-start: 8px;
   }
 
   .art__img__ice-cream {
