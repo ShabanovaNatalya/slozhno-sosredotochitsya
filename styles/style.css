@@ -188,7 +188,8 @@ main {
   margin-block-end: clamp(49px, 21.3744px + 7.94vw, 81px);
 }
 
-.why div {
+.why div,
+.how__content {
   justify-self: end;
   max-width: 472px;
 }
@@ -383,6 +384,7 @@ img:not(:last-child) {
   }
 
   .how__content {
+    max-width: 100%;
     margin-inline-start: 11px;
   }
 
