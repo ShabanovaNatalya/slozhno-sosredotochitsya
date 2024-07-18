@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -17,47 +18,45 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__content">
-        <nav class="header__theme-menu">
-        <div class="header__decor" aria-hidden="true"></div>
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="visually-hidden">Сложно сосредоточиться</h1>
-      <h2 class="header__title">no focus</h2>
-      <p class="header__subtitle title-decor">
-        Что делать, когда не можешь делать ничего <br />
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
-      </p>  
-      </div>    
+      <div class="header__decor" aria-hidden="true"></div>
+      <nav class="header__theme-menu"> 
+           <ul class="header__theme-menu-list">
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_light"
+              >
+                День
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                disabled
+              >
+                Авто
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_dark"
+              >
+                Неон
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">no focus</h1>
+        <p class="header__subtitle title-decor">
+          Что делать, когда не&nbsp;можешь делать ничего <br />
+          Или почему нам так сложно сконцентрироваться, особенно когда очень
+          надо
+        </p>
     </header>
 
     <main class="content">
-      <section class="why">
-        <h2 class="why__title">Почему сосредоточиться так сложно</h2>
-        <div class="why__content">
+      <section class="why section">
+        <h2 class="section-title">Почему сосредоточиться так сложно</h2>
+        <div class="section-content">
           <article>
             <h3 class="title-decor">Многозадачность</h3>
             <p class="article-decor">
@@ -66,12 +65,9 @@
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
               <a
-                class="why__links_ncbi why__links"
-                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7075496/"
-                >выяснили</a
-              ><a
-                class="why__links_dana why__links"
+                class="links"
                 href="https://dana.org/article/multicosts-of-multitasking/"
+                target="_blank"
                 >выяснили</a
               >, что мозгу тяжело концентрироваться даже на двух делах
               одновременно. А когда в поле внимания попадает несколько важных
@@ -96,9 +92,9 @@
         </div>
       </section>
 
-      <section class="what">
-        <h2 class="what__title">Что снижает концентрацию внимания?</h2>
-        <div class="what__content">
+      <section class="what section">
+        <h2 class="what__title section-title">Что снижает концентрацию внимания?</h2>
+        <div class="what__content section-content">
           <article>
             <h3 class="title-decor">Многозадачность</h3>
             <p class="article-decor">
@@ -135,54 +131,54 @@
           </article>
         </div>
       </section>
-      <section class="how">
-        <h2 class="how__title">
+      <section class="how section">
+        <h2 class="how__title section-title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-<div class="how__content">
-            <h3 class="title-decor">
-              5 простых (на самом деле не очень) советов
-            </h3>
-            <article>
-              <h4 class="title-decor">Представьте небо и облака</h4>
-              <p class="article-decor">
-                Или листья в ручье. Тут дело в лёгкой медитации, которая
-                помогает успокоиться. Ведь часто именно тревожные мысли о
-                сложных задачах как раз и мешают эти сложные задачи делать. В
-                такие моменты можно закрыть глаза и представить, что чистое небо
-                — это вы, а облака — тревожные мысли. И сколько бы их ни было —
-                ясное небо всегда будет где-то там, за тучами, и никуда не
-                денется. Это упражнение поможет вернуться в настоящий момент, а
-                не волноваться о потенциальных проблемах из будущего.
-              </p>
-            </article>
-            <article>
-              <h4 class="title-decor">Включите музыкуа</h4>
-              <p class="article-decor">
-                Но не любую, и не любимую. Любимая может быть связана с сильными
-                положительными эмоциями, которые тоже очень сильно отвлекают.
-                Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
-                попробовать включить плейлист c «белым шумом» или нейромузыкой.
-              </p>
-            </article>
-            <article>
-              <h4 class="title-decor">Прогуляйтесь</h4>
-              <p class="article-decor">
-                Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-                <a
-                  class="how__links"
-                  href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
-                  >показал</a
-                >, что созерцание природы повышает концентрацию, в то время как
-                после просмотра городских пейзажей она наоборот понижается.
-                Можно совместить прогулку с физическими упражнениями или бегом —
-                так в мозг поступит ещё больше кислорода и он будет лучше
-                работать. Но и простая двадцатиминутная прогулка — тоже отличный
-                вариант.
-              </p>
-            </article>
-            <article>
+        <div class="section-content">
+          <h3 class="title-decor">
+            5 простых (на самом деле не очень) советов
+          </h3>
+          <article>
+            <h4 class="title-decor">Представьте небо и облака</h4>
+            <p class="article-decor">
+              Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
+              успокоиться. Ведь часто именно тревожные мысли о сложных задачах
+              как раз и мешают эти сложные задачи делать. В такие моменты можно
+              закрыть глаза и представить, что чистое небо — это вы, а облака —
+              тревожные мысли. И сколько бы их ни было — ясное небо всегда будет
+              где-то там, за тучами, и никуда не денется. Это упражнение поможет
+              вернуться в настоящий момент, а не волноваться о потенциальных
+              проблемах из будущего.
+            </p>
+          </article>
+          <article>
+            <h4 class="title-decor">Включите музыку</h4>
+            <p class="article-decor">
+              Но не любую, и не любимую. Любимая может быть связана с сильными
+              положительными эмоциями, которые тоже очень сильно отвлекают.
+              Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
+              попробовать включить плейлист c «белым шумом» или нейромузыкой.
+            </p>
+          </article>
+          <article>
+            <h4 class="title-decor">Прогуляйтесь</h4>
+            <p class="article-decor">
+              Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
+              <a
+                class="links"
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                target="_blank"
+                >показал</a
+              >, что созерцание природы повышает концентрацию, в то время как
+              после просмотра городских пейзажей она наоборот понижается. Можно
+              совместить прогулку с физическими упражнениями или бегом — так в
+              мозг поступит ещё больше кислорода и он будет лучше работать. Но и
+              простая двадцатиминутная прогулка — тоже отличный вариант.
+            </p>
+          </article>
+          <article>
             <h4 class="title-decor">Хорошо ешьте</h4>
             <p class="article-decor">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
@@ -202,42 +198,45 @@
           </article>
         </div>
       </section>
-      <section class="art">
-        <h2 class="art__title title-decor">А можно в картинках?</h2>
+      <section class="section">
+        <h2 class="art title-decor">А можно в картинках?</h2>
         <div class="art__gallery">
           <img
             src="./images/sunset.png"
-            alt="sunset"
+            alt="Закатная панорама. На переднем плане море, на заднем между двумя вершинами гор садится солнце"
             class="art__img__sunset art__img"
+            loading="lazy"
           />
           <img
             src="./images/ice-cream.png"
-            alt="ice-cream"
+            alt="Мороженое в виде смешных шариков в большой тарелке. На шариках сливки и вокруг фрукты и даже один зонтик"
             class="art__img__ice-cream art__img"
+            loading="lazy"
           />
           <img
             src="./images/tape.png"
-            alt="tape"
+            alt="Картинка с айдиокасетой, программой-плеером"
             class="art__img__tape art__img"
+            loading="lazy"
           />
           <img
             src="./images/books.png"
-            alt="books"
+            alt="Картинка с изображением стопки из 11 книг с розовой чашкой наверху. Нижняя книга с глазами."
             class="art__img__books art__img"
+            loading="lazy"
           />
           <img
             src="./images/street.png"
-            alt="street"
+            alt="Картинка с изображением улицы в розовых тонах. На улице двухэтажные дома и между ними натянуты провода."
             class="art__img__street art__img"
+            loading="lazy"
           />
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__content">
+    <footer class="footer decorated-zone">
         <h2 class="footer__title">focus</h2>
-      </div>
-  </footer>
+    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
